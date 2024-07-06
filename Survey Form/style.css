@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-image: url('https://img.freepik.com/free-photo/smooth-dark-blue-background_1258-45745.jpg');
+    background-size: cover;
+   
+}
+h1{
+    background-color: lightblue;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+legend{
+    text-align: left;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 80vh;
+}
+
+fieldset{
+   width: 80%;
+   background-color: rgba(224, 147, 238, 0.6);
+   border-radius: 20px;
+}
+
+.InputLable{
+    text-align: right;
+    
+}
+
+
+
+.InputField{
+    width: 350px;
+    margin-bottom: 15px;
+    
+}
+
+.InputLable label{
+    font-weight: bold;
+}
+.InputField input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    box-shadow: 2px 2px 8px rgb(1, 1, 1) ;
+    border-radius: 5px;
+}
+.InputField select{
+    width: 100%;
+    height: 30px;
+    border: none;
+    box-shadow: 2px 2px 8px rgb(71, 69, 69) ;
+    border-radius: 5px;
+}
+
+.InputLine{
+    height: 50px;
+}
+
+#InputCollectors{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+#Questions{
+    text-align: left;
+}
+
+.text{
+    width: 350px;
+    height: 100px;
+}

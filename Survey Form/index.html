@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form>
+       
+        <fieldset>
+            <legend>Give Your Survey</legend>
+            <h1>Survey Form</h1>
+            <div id="InputCollectors">
+
+                <table>
+                    <tr class="InputLine">
+                        <td class="InputLable"><label for="name">Name:</label></td>
+                        <td class="InputField"><input type="text" id="name" placeholder="Enter Your Name" required ></td>
+                    </tr>
+                    <tr class="InputLine">
+                        <td class="InputLable"><label for="phone">Phone Number:</label></td>
+                        <td class="InputField"><input type="text" id="phone" placeholder="1234567890" required></td>
+                    </tr>
+                    <tr class="InputLine">
+                        <td class="InputLable"><label for="email">Email:</label></td>
+                        <td class="InputField"><input type="email" id="name" placeholder="user@gmail.com" required></td>
+                    </tr>
+                    <tr>
+                        <td class="InputLable"><label>Your Location: </label></td>
+                        <td class="InputField"><select name="Location" id="Location" required>
+                            <option value="">----Location----</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </select></td>
+                    </tr>
+                    <tr class="InputLine">
+                        <td class="InputLable"><label for="DOB">Date Of Birth:</label></td>
+                        <td class="InputField"><input type="date" id="dateOfBirth" required></td>
+                    </tr>
+                    <tr class="InputLine">
+                        <td class="InputLable"><label for="Proficient">Select Your Coding Proficiency:</label></td>
+                        <td >
+                            <input  type="radio" name="proficent" id="Proficient"><label>Beginer</label>
+                            <input type="radio" name="proficent" id="Proficient"><label>Intermediate</label>
+                            <input type="radio" name="proficent" id="Proficient"><label>Advance</label>
+                            
+                        </td>
+                    </tr>
+                </table>
+                <div id="Questions">
+                    <div >
+                        <p><b>Have You Ever Appered in any coding contest?</b></p>
+                        <input type="radio" name="contest"><label>Yes</label>
+                        <input required type="radio" name="contest"><label>No</label>
+                    </div>
+                    <div>
+                        <p><b>Share Your Experience in coding or making projects</b></p>
+                        <textarea required class="text" placeholder="Enter Your Answer" name="ex" id="ex"></textarea>
+                    </div>
+                    <div>
+                        <p><b>Please Share the hosted links of your Projects</b></p>
+                        <textarea required class="text" placeholder="Enter Link Here" name="links" id="links"></textarea>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <button onclick="alert('Survey Submitted')">Submit Survey</button> -->
+             <input type="submit" value="Submit Survey">
+        </fieldset>
+    </form>
+</body>
+</html>
